@@ -4,6 +4,8 @@ go 1.13
 
 // Pinned to kubernetes-1.16.2
 replace (
+	github.com/operator-framework/operator-lifecycle-manager => ../operator-lifecycle-manager
+	github.com/operator-framework/operator-registry => ../operator-registry
 	k8s.io/api => k8s.io/api v0.0.0-20191016110408-35e52d86657a
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.0.0-20191016113550-5357c4baaf65
 	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20191004115801-a2eda9f80ab8
@@ -30,15 +32,12 @@ replace (
 require (
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/ghodss/yaml v1.0.0
-	github.com/golang/groupcache v0.0.0-20191027212112-611e8accdfc9 // indirect
-	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/operator-framework/operator-lifecycle-manager v0.0.0-20191115003340-16619cd27fa5
-	github.com/operator-framework/operator-registry v1.5.3
-	github.com/pkg/errors v0.8.1
+	github.com/operator-framework/operator-registry v1.5.10
+	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/cobra v0.0.5
 	github.com/stretchr/testify v1.4.0
-	k8s.io/apiextensions-apiserver v0.0.0
-	k8s.io/apimachinery v0.0.0
-	k8s.io/client-go v8.0.0+incompatible
+	k8s.io/apiextensions-apiserver v0.17.2
+	k8s.io/apimachinery v0.17.2
 )
